@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
+    <meta name="description" content="Fredrick Karanja's portfolio website. A passionate web development student.">
+    <meta name="keywords" content="Fredrick Karanja, web development, HTML, CSS, portfolio">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Alex</a>
-
+        <a href="#" class="logo">Fred</a>
+        <span class="menu-toggle"><i class="fas fa-bars"></i></span>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
-            <img src="main.jpg" alt="">
+            <img src="main.jpg" alt="Profile picture of Fredrick Karanja">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Fredrick Karanja</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <h2>About Me</h2>
+            <p>Hello! I'm Fredrick Karanja, a dedicated web development student with a keen interest in front-end technologies, including HTML and CSS. My passion lies in creating beautiful and functional websites, and I'm continually working on expanding my skill set.</p>
+            <h2>Learning Journey</h2>
+            <p>As a student, I have immersed myself in the world of web development, building various projects and experiments to hone my skills. I am currently focused on mastering the basics of HTML and CSS and excited to dive deeper into more advanced topics in the near future.</p>
+            <h2>Personal Interests</h2>
+            <p>Outside of coding, I love exploring the latest trends in technology and design. In my free time, you can find me experimenting with new coding techniques, hiking in nature, or enjoying a good book. These activities fuel my creativity and keep me inspired.</p>
+            <h2>Motivation and Goals</h2>
+            <p>What drives me is the curiosity to learn and the desire to create impactful web experiences. My goal is to become a proficient web developer and contribute to exciting projects that make a difference. I'm always open to new opportunities and collaborations, so feel free to reach out if you'd like to connect or learn more about my work. Let’s embark on this journey together!</p>
+            <h2><strong>Contact Information:</strong></h2>
+            <p>
+                <address class="bold">
+                Email: [your email]<br> 
+                LinkedIn: [Fredrick Karanja]<br> 
+                GitHub: [Frosty-Dog3]
+                </address>
+            </p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Frosty-Dog3" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+
+    <script>
+        // Toggle nav menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
